@@ -1,0 +1,118 @@
+.background_cover {
+    background-image: url(../../assets/background_images/home_background.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+}
+.background_color_overlay {
+    height: 100vh;
+    width: 100vw;
+    background-color: #6B5403;
+    position: absolute;
+    top: 0;
+    z-index: 2;
+    opacity: 0.57;
+}
+.container-fluid {
+    padding: 0!important;
+}
+
+.hero-content {
+    position: absolute;
+    width: 100%;
+    z-index: 10;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.hero-text-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 350px;
+}
+
+.hero-text-content p {
+    font-size: 50px;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    margin-bottom: 0;
+}
+
+.rounded-pill {
+    margin: 0 5px;
+    cursor: pointer;
+    font-size: 14px;
+    padding: 10px;
+}
+
+.bees {
+   color: #fee47d; 
+}
+
+.explore {
+    width: 200px;
+    font-size: 18px;
+    margin-bottom: 25px;
+    background-color: #fee47c;
+    color: black;
+    transition: 0.2s;
+}
+
+.chip {
+    font-weight: 200;
+    padding: 10px 15px;
+}
+
+.section-type-a h1, .section-type-b h1 {
+    text-align: center;
+    border-bottom: 1px solid silver;
+    width: 85%;
+    margin-inline: auto;
+    padding-bottom: 8px;
+    font-family: 'Quicksand', sans-serif;
+}
+
+.section-type-a p, .section-type-b p {
+    font-size: 12px;
+    padding: 28px;
+    text-align: center;
+}
+.section-type-b {
+    background: #fff3c4;
+    padding: 20px!important;
+}
+
+.analytics-image-holder {
+    text-align: center;
+    margin: 10px 0;
+}
+
+@media only screen and (max-width:1050px) {
+    .background_cover {
+        background-position: center;
+    }
+    .hero-text-content {
+        text-align: center;
+        margin-bottom: 225px;
+    }
+    .analytics-image-holder img {
+        width: 180px;
+    }
+    .key-phrase p{
+        font-size: 32px;
+    }
+    .explore {
+        margin-top: 25px;
+    }
+    .chip {
+        margin: 7px;
+    }
+    .section-type-a {
+        padding: 28px !important;
+    }
+}

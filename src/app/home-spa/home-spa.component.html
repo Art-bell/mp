@@ -1,0 +1,78 @@
+<div class="container-fluid">
+    <div class="background_cover">
+        <div class="hero-content">
+            <app-transparent-header></app-transparent-header>
+
+            <div class="hero-text-content">
+                <div class="key-phrase">
+                    <p>What's The <span class="bees">Buzz?</span></p>
+                </div>
+                <div>
+                    <!-- <app-search-bar></app-search-bar> -->
+                    <button type="button" class="btn btn-warning btn-rounded explore">Explore</button>
+                </div>
+                <div class="chips">
+                    <span class="chip badge rounded-pill bg-light text-dark">Technology</span>
+                    <span class="chip badge rounded-pill bg-light text-dark">Finance</span>
+                    <span class="chip badge rounded-pill bg-light text-dark">Health</span>
+                    <span class="chip badge rounded-pill bg-light text-dark">Construction</span>
+                    <span class="chip badge rounded-pill bg-light text-dark">Supply Chain</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="background_color_overlay">
+
+    </div>
+    <div class="section-type-a company-analytics container-fluid">
+        <div class="row">
+            <h1>Company Analytics</h1>
+        </div>
+        <div class="analytics-image-holder">
+            <img src="assets/background_images/company_analytics.png" />
+        </div>
+        <div class="row">
+            <p>
+                After three years of research and development, our survey methodology was built to ensure that the entire sphere of the employee experience has been uncovered in the most complete way possible. 
+                Our platform is not only a way for job seekers to ensure that they are going to be working in an environment that is comfortable for them, but it is also a way for companies to assess themselves and compare their work environments to one another. 
+                Transparency is the key to understanding and this platform allows for executives, employees, and job seekers to understand their work environment in the most in depth way possible. 
+            </p>
+        </div>
+    </div>
+    <div class="section-type-a company-analytics container-fluid">
+        <div class="analytics-image-holder">
+            <img src="assets/background_images/company_analytics_c.png" />
+        </div>
+        <div class="row">
+            <p>
+                EmployeeBee wants to see a world where people aren’t penalized for being themselves. The corporate space presents a wonderful opportunity to help advance this vision. We want everyone to experience equal treatment and opportunity in the pursuit of their goals. Every person matters and we all deserve to be treated as such. Join our team and be a part of the change that we all want to see. 
+            </p>
+        </div>
+    </div>
+    <div class="section-type-b extra-info container-fluid">
+        <div class="row">
+            <h1>Leverage Accurate Data</h1>
+        </div>
+        <div class="analytics-image-holder">
+            <img style="width: 120px;" src="assets/background_images/illustration.png" />
+        </div>
+        <div class="row">
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.             </p>
+        </div>
+    </div>
+    <app-footer>
+    </app-footer>
+    <script>
+        [].map.call(document.querySelectorAll('.explore'), el=> {
+            el.addEventListener('click',e => {
+                e = e.touches ? e.touches[0] : e;
+                const r = el.getBoundingClientRect(), d = Math.sqrt(Math.pow(r.width,2)+Math.pow(r.height,2)) * 2;
+                el.style.cssText = `--s: 0; --o: 1;`;  el.offsetTop; 
+                el.style.cssText = `--t: 1; --o: 0; --d: ${d}; --x:${e.clientX - r.left}; --y:${e.clientY - r.top};`
+            })
+        })
+
+
+    </script>
+</div>

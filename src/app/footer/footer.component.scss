@@ -1,0 +1,34 @@
+.sizer {
+    display: flex;
+}
+@media only screen and (max-width:1050px){
+    .brand-logo {
+        justify-content: center;
+        padding: 10px;
+        background-color: #42403A;
+    }
+    .brand-logo img {
+        width: 80px;
+    }
+    .brand-logo p {
+        text-align: center;
+        color: white;
+        font-family: 'Quicksand';
+        font-size: 12px;
+    }
+    .social-icons {
+        background-color: #2F2D2A;
+        justify-content: center;
+        padding: 20px 5px;
+    }
+    .social-icons .sizer {
+        width: 140px;
+        margin-inline: auto;
+    }
+    .social-icons div {
+        text-align: center;
+    }
+    .social-icons i {
+        font-size: 20px;
+    }
+}

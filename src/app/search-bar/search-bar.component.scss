@@ -1,0 +1,27 @@
+.search-bar-holder {
+    background-color: white;
+    padding: 16px;
+    width: 600px;
+    margin: 18px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.search-input-holder {
+    display: flex;
+    align-items: center;
+}
+
+input {
+    border: none;
+    outline: none;
+}
+.search-button {
+    display: flex;
+    justify-content: flex-end;
+}
+
+button {
+    background-color: #FEE47D;
+    border: none;
+    padding: 5px 20px;
+}
