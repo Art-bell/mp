@@ -49,7 +49,38 @@
             </div>
         </div>
         <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-6 col-sm-3 col-3 menu-expand">
-            <i class="fas fa-bars fa-2x" style="color: white"></i>
+            <i class="fas fa-bars fa-2x" style="color: white" (click)="basicCollapse.toggle()"
+            [attr.aria-expanded]="!basicCollapse.collapsed"
+            aria-controls="collapseExample"></i>
+            
         </div>
     </div>
+    <div class="menu-options-container" id="collapseExample" mdbCollapse #basicCollapse="mdbCollapse">
+        <div class="menu-options">
+            <ul style="    list-style: none;
+            text-align: center;">
+                <li class="menu-nav">
+                    <a routerLink="/">
+                        Home
+                    </a>
+                </li>
+                <li class="menu-nav active">
+                    <a routerLink="/companies">
+                        Companies
+                    </a>
+                </li>
+                <li class="menu-nav">
+                    Stories
+                </li>
+                <li class="menu-nav">
+                    About Us
+                </li>
+                <li class="menu-nav">
+                    <a routerLink="/take-a-survey">
+                        Take a Survey!
+                    </a>
+                </li>
+            </ul>
+        </div>
+      </div>
 </div>

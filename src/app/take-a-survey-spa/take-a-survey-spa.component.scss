@@ -1,34 +1,13 @@
 .container-fluid {
     padding: 0 !important;
-}
-.page-header {
-    text-align: center;
-    font-family: 'Montserrat';
-}
-.action-content {
-    padding: 40px;
-}
-.action-content img {
-    width: 100px;
-}
-.action-content:nth-child(2){
-    text-align: center;
-    font-family: 'Montserrat';
+    height: 100vh;
     display: flex;
-    align-items: end;
-}
-.start-survey {
-    background-color: white;
-    border: none;
-    padding: 5px 15px;
-    margin-bottom: 10px;
-    color: #f8ad22;
-    box-shadow: rgb(0 0 0 / 10%) 0px 6px 8px;
-}
-.start-survey-prompt {
-    font-size: 13px;
-    margin-bottom: 40px;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: stretch;
 }
 .main-content {
-    margin: 60px 0;
+    padding: 30px;
+    font-family: "Montserrat", sans-serif;
+    margin-bottom: 10px;
 }

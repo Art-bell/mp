@@ -3,7 +3,66 @@
 @import '~@fortawesome/fontawesome-free/scss/solid.scss';
 @import '~@fortawesome/fontawesome-free/scss/regular.scss';
 @import '~@fortawesome/fontawesome-free/scss/brands.scss';
+
+@import "~swiper/css";
+@import "~swiper/css/pagination";
  
 @import '~mdb-angular-ui-kit/assets/scss/mdb.scss';
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Open+Sans:wght@300;400;500;600;700;800&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500&display=swap');
+@import '~css-star-rating/scss/star-rating';
+
+.custom-select-box {
+    padding: 10px 12px;
+    width: 100%;
+    border-radius: 8px;
+}
+
+.survey-options-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+.nav-button-group {
+    display: block;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.user-prompt {
+    margin-bottom: 30px;
+}
+
+.section-description {
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.question-label {
+    margin-bottom: 20px;
+}
+
+.form-field-group {
+    margin-bottom: 40px;
+}
+
+.nav-pills, .nav-tabs {
+    justify-content: center !important;
+}
+
+.nav-pills .nav-link.active {
+    background-color: #FFEEA7;
+    color: black;
+}
+
+.nav-tabs .nav-link.active {
+    color: #f8ad22;
+    border-color: #f8ad22;
+}
+
+.tab-content {
+    margin: 20px 10px;
+}

@@ -6,7 +6,6 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./transparent-header.component.scss']
 })
 export class TransparentHeaderComponent implements OnInit {
-
   constructor() { }
 
   ngOnInit(): void {

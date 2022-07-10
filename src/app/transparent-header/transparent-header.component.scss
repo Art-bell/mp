@@ -1,3 +1,7 @@
+// .alt-color  li.menu-nav {
+//     color: #f8ad22;
+// }
+
 .button-holder {
     display: flex;
     justify-content: right;
@@ -6,8 +10,13 @@ ul {
     padding: 0;
     margin-bottom: 0;
 }
-li {
+li:not(.menu-nav) {
     display: inline-block;
+}
+.menu-nav {
+    border-bottom: 1px solid white;
+    padding: 10px;
+    color: white;
 }
 .menu-option-holder {
     padding: 20px;
@@ -64,6 +73,10 @@ li {
     display: none;
 }
 
+a {
+    color: inherit;
+}
+
 @media only screen and (max-width:1050px) {
     .full-header-large {
         display: none;
@@ -77,7 +90,14 @@ li {
     .container-fluid {
         padding: 0 20px;
     }
-    :host.alt-color p, :host.alt-color .fa-bars {
+    :host.alt-color p, :host.alt-color li.menu-nav, :host.alt-color .fa-bars {
+        color: #F8AD22!important;
+    }
+    :host.alt-color li.menu-nav {
+        color: #000!important;
+
+    }
+    :host.alt-color li.menu-nav.active {
         color: #F8AD22!important;
     }
 }

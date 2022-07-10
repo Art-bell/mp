@@ -1,0 +1,48 @@
+<div>
+    <h1 class="user-prompt">Experience</h1>
+    <p class="section-description">
+        Describe your experience working at "company-name"
+    </p>
+    <div class="survey-options-container">
+        <div class="form-field-group">
+            <label class="question-label">
+                What is the highest position you have held at your current/previous job(s)?
+            </label>
+            <select class="custom-select-box" required>
+                <option selected hidden>Select a Level</option>
+                <option>Executive</option>
+                <option>Marketing Manager</option>
+                <option>Product Manager</option>
+                <option>Project Manager</option>
+                <option>Finance Manager</option>
+                <option>Human Resources Manager</option>
+                <option>Senior Manager</option>
+                <option>Manager</option>
+                <option>Specialist</option>
+                <option>Business Analyst</option>
+                <option>Accountant</option>
+                <option>Sales Representative</option>
+                <option>Customer Service Representative</option>
+                <option>Administrative Assistant</option>
+            </select>
+        </div>
+
+        <div class="form-field-group">
+            <label class="question-label">
+                How many years have you worked for this company?
+            </label>
+            <select class="custom-select-box" required>
+                <option selected hidden>Select a range</option>
+                <option>1 - 3 years</option>
+                <option>4 - 6 years</option>
+                <option>7 - 10 years</option>
+                <option>11 - 14 years</option>
+                <option>15+ years</option>
+            </select>
+        </div>
+        
+        <div class="nav-button-group">
+            <button type="button"(click)="moveToNextPage()" class="btn btn-warning">Next</button>
+        </div>
+    </div>
+</div>

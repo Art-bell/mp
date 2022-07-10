@@ -1,0 +1,31 @@
+.container-fluid {
+    padding: 0 !important;
+}
+.page-header {
+    text-align: center;
+    font-family: 'Quicksand';
+}
+.action-content {
+    padding: 40px;
+}
+.action-content img {
+    width: 100px;
+}
+.action-content:nth-child(2){
+    text-align: center;
+    font-family: 'Montserrat';
+    display: flex;
+    align-items: end;
+}
+.start-survey {
+    background-color: white;
+    border: none;
+    padding: 5px 15px;
+    margin-bottom: 10px;
+    color: #f8ad22;
+    box-shadow: rgb(0 0 0 / 10%) 0px 6px 8px;
+}
+.start-survey-prompt {
+    font-size: 13px;
+    margin-bottom: 40px;
+}

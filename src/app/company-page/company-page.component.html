@@ -1,0 +1,86 @@
+<div class="container-fluid full-page">
+    <app-transparent-header appHeaderSwitch [isAlt]="true"></app-transparent-header>
+    <div class="main-content">
+        <div class="company-info row">
+            <div class="company-and-logo">
+                <p>
+                    Meta
+                </p>
+                <img src="/assets/template_company_logos/meta.png" />
+            </div> 
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+            </p>
+        </div>
+        <div class="row">
+            <mdb-tabs>
+                <mdb-tab title="Reviews">
+                    Reviews
+                </mdb-tab>
+                <mdb-tab title="Stats">
+                    <mdb-tabs [pills]="true">
+                        <mdb-tab title="Engagement">
+                            <div>
+                                <div>
+                                  <div style="display: block">
+                                    <canvas baseChart
+                                      [data]="barChartData"
+                                      [options]="barChartOptions"
+                                      [plugins]="barChartPlugins"
+                                      [type]="barChartType"
+                                      (chartHover)="chartHovered($event)"
+                                      (chartClick)="chartClicked($event)">
+                                    </canvas>
+                                  </div>
+                                </div>
+                              </div>
+                              <p class="graph-info-blob">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Placerat in egestas erat imperdiet sed euismod nisi. Eget velit aliquet sagittis id consectetur. Sed id semper risus in hendrerit gravida rutrum
+                              </p>
+                        </mdb-tab>
+                        <mdb-tab title="Diversity">
+                            <div>
+                                <div>
+                                  <div style="display: block">
+                                    <canvas baseChart
+                                      [data]="radarChartData"
+                                      [options]="radarChartOptions"
+                              
+                                      [type]="radarChartType">
+                                    </canvas>
+                                  </div>
+                                </div>
+                              </div>
+                              <p class="graph-info-blob">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Placerat in egestas erat imperdiet sed euismod nisi. Eget velit aliquet sagittis id consectetur. Sed id semper risus in hendrerit gravida rutrum
+                              </p>
+                        </mdb-tab>
+                        <mdb-tab title="Inclusivity">
+                            <div>
+                                <div>
+                                  <div style="display: block">
+                                    <canvas baseChart
+                                      [data]="doughnutChartData"
+                              
+                                      [type]="doughnutChartType">
+                                    </canvas>
+                                  </div>
+                                </div>
+                              </div>
+                              <p class="graph-info-blob">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Placerat in egestas erat imperdiet sed euismod nisi. Eget velit aliquet sagittis id consectetur. Sed id semper risus in hendrerit gravida rutrum
+                              </p>
+                        </mdb-tab>
+                        <mdb-tab title="Retention">Tab content 4</mdb-tab>
+                        <mdb-tab title="Upward Mobility">Tab content 5</mdb-tab>
+                      </mdb-tabs>
+                </mdb-tab>
+              </mdb-tabs>
+        </div>
+        <div class="row section-content">
+            
+        </div>
+    </div>
+    <app-footer>
+    </app-footer>
+</div>

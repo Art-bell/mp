@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { SwiperModule } from "swiper/angular";
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -27,11 +28,41 @@ import { HomeSectionComponent } from './home-section/home-section.component';
 import { TakeASurveySpaComponent } from './take-a-survey-spa/take-a-survey-spa.component';
 import { HeaderSwitchDirective } from './header-switch.directive';
 import { RouterModule, Routes } from '@angular/router';
+import { CompaniesComponent } from './companies/companies.component';
+import { CompanyBlockComponent } from './company-block/company-block.component';
+import { CompanySelectionComponent } from './take-a-survey-spa/survey-pages/company-selection/company-selection.component';
+import { ExperienceComponent } from './take-a-survey-spa/survey-pages/experience/experience.component';
+import { PsychologicalSafetyComponent } from './take-a-survey-spa/survey-pages/psychological-safety/psychological-safety.component';
+import { DiversityComponent } from './take-a-survey-spa/survey-pages/diversity/diversity.component';
+import { UpwardMobilityComponent } from './take-a-survey-spa/survey-pages/upward-mobility/upward-mobility.component';
+import { RetentionComponent } from './take-a-survey-spa/survey-pages/retention/retention.component';
+import { RecruitmentComponent } from './take-a-survey-spa/survey-pages/recruitment/recruitment.component';
+import { GeneralComponent } from './take-a-survey-spa/survey-pages/general/general.component';
+import { ProfileComponent } from './take-a-survey-spa/survey-pages/profile/profile.component';
+import { TakeASurveyStartComponent } from './take-a-survey-spa/survey-pages/take-a-survey-start/take-a-survey-start.component';
+import { SurveyService } from './take-a-survey-spa/survey.service';
+import { CompanyPageComponent } from './company-page/company-page.component';
+import { NgChartsModule } from 'ng2-charts';
+import { CompanyReviewComponent } from './company-review/company-review.component';
 
 const appRoutes: Routes = [
   { path: '', component: HomeSpaComponent},
-  { path: 'take-a-survey', component: TakeASurveySpaComponent}
+  { path: 'take-a-survey', component: TakeASurveySpaComponent, children: [
+    { path: '', component: TakeASurveyStartComponent},
+    { path: 'select-company', component: CompanySelectionComponent},
+    { path: 'experience', component: ExperienceComponent},
+    { path: 'psychological-safety', component: PsychologicalSafetyComponent},
+    { path: 'diversity', component: DiversityComponent},
+    { path: 'upward-mobility', component: UpwardMobilityComponent},
+    { path: 'retention', component: RetentionComponent},
+    { path: 'recruitment', component: RecruitmentComponent},
+    { path: 'general', component: GeneralComponent},
+  ]},
+  { path: 'companies', component: CompaniesComponent},
+  { path: 'company-page', component: CompanyPageComponent},
+  { path: 'test', component: CompanyReviewComponent},
 ]
+
 
 @NgModule({
   declarations: [
@@ -42,10 +73,25 @@ const appRoutes: Routes = [
     FooterComponent,
     HomeSectionComponent,
     TakeASurveySpaComponent,
-    HeaderSwitchDirective
+    HeaderSwitchDirective,
+    CompaniesComponent,
+    CompanyBlockComponent,
+    CompanySelectionComponent,
+    ExperienceComponent,
+    PsychologicalSafetyComponent,
+    DiversityComponent,
+    UpwardMobilityComponent,
+    RetentionComponent,
+    RecruitmentComponent,
+    GeneralComponent,
+    ProfileComponent,
+    TakeASurveyStartComponent,
+    CompanyPageComponent,
+    CompanyReviewComponent
   ],
   imports: [
     BrowserModule,
+    BrowserAnimationsModule,
     AppRoutingModule,
     MdbAccordionModule,
     MdbCarouselModule,
@@ -62,10 +108,12 @@ const appRoutes: Routes = [
     MdbTabsModule,
     MdbTooltipModule,
     MdbValidationModule,
+    NgChartsModule,
     BrowserAnimationsModule,
+    SwiperModule,
     RouterModule.forRoot(appRoutes)
   ],
-  providers: [],
+  providers: [SurveyService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

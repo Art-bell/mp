@@ -1,0 +1,30 @@
+<div class="container-fluid">
+    <app-transparent-header appHeaderSwitch [isAlt]="true"></app-transparent-header>
+    <div class="main-content">
+        <h1 class="page-header">Companies</h1>
+        <div>
+            <company-block [thumbnailData]="{
+                imagePath: '/assets/template_company_logos/meta.png',
+                companyName: 'Meta',
+                pageUrl: ''
+              }"></company-block>
+            <company-block [thumbnailData]="{
+                imagePath: '/assets/template_company_logos/3M.png',
+                companyName: '3M',
+                pageUrl: ''
+              }"></company-block>
+            <company-block [thumbnailData]="{
+                imagePath: '/assets/template_company_logos/google.png',
+                companyName: 'Google',
+                pageUrl: ''
+              }"></company-block>
+            <company-block [thumbnailData]="{
+                imagePath: '/assets/template_company_logos/p_and_g.png',
+                companyName: 'P&G',
+                pageUrl: ''
+              }"></company-block>
+        </div>
+    </div>
+    <app-footer>
+    </app-footer>
+</div>
